@@ -7,7 +7,20 @@ page-home {
       color: white;
       background-color: orange;
     }
-  .center {
+ .scroll-content{
+  justify-content: center;
+	display: flex!important;
+ 	align-items: center!important;
+  display: list-item;
+  vertical-align: middle;
+  text-align: center;
+
+}
+ .button-md{
+    text-transform: capitalize;
     text-align: center;
+    display: list-item;
+    vertical-align: middle;
   }
+
 }

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { NewPlacePage } from '../new-place/new-place';
 import { PlaceProvider } from '../../providers/place/place';
+import { QuestionsPage } from '../questions/questions';
 
 @Component({
   selector: 'page-home',
@@ -31,12 +32,7 @@ export class HomePage {
     });
   }
 
-  testBtn() {
-    this.message = "J'ai appuyé sur le bouton";
-  }
-
-  goToNewPlace() {
-    this.navCtrl.push(NewPlacePage);
-  }
-
+  goToQuestions() {
+    this.navCtrl.push(QuestionsPage);
+    }
 }

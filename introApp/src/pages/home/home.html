@@ -1,11 +1,3 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title class="titre">
-      HUE HUE HUE HUEEEEEEEE
-    </ion-title>
-  </ion-navbar>
-</ion-header>
-
 <ion-content padding>
   <!--
 {{message}}
@@ -24,11 +16,16 @@
   </ion-item>
 </ion-list>
 -->
-    <ion-list no-lines class="center">
-      <button ion-button item-start>Jouer</button>
+    <ion-list no-lines>
+      <button ion-button item-start (click)="goToQuestions()">Jouer</button>
       <button ion-button item-start>Classement</button>
-      <button ion-button item-start class="option">Options</button>
-
+      <button ion-button item-start>Proposer une question</button>
     </ion-list>
+
+    <ion-footer>
+  <ion-toolbar>
+    <button ion-button item-start class="option">Options</button>
+  </ion-toolbar>
+</ion-footer>
 
 </ion-content>

@@ -10,13 +10,15 @@ import { Geolocation } from '@ionic-native/geolocation';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { NewPlacePage } from '../pages/new-place/new-place';
+import { QuestionsPage } from '../pages/questions/questions';
 import { PlaceProvider } from '../providers/place/place';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    NewPlacePage
+    NewPlacePage,
+    QuestionsPage,
   ],
   imports: [
     BrowserModule,
@@ -27,14 +29,15 @@ import { PlaceProvider } from '../providers/place/place';
   entryComponents: [
     MyApp,
     HomePage,
-    NewPlacePage
+    NewPlacePage,
+    QuestionsPage,
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     PlaceProvider,
-    Geolocation
+    Geolocation,
   ]
 })
 export class AppModule {}

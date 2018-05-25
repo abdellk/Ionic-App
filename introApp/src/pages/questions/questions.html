@@ -1,0 +1,24 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Question</ion-title>
+  </ion-navbar>
+
+  <ion-toolbar>
+      <ion-title>Score</ion-title>
+    </ion-toolbar>
+
+</ion-header>
+
+<ion-content padding>
+
+<!--  1.premièrement, afficher question, associé une réponse (VRAI OU FAUX) et afficher si le résultat est bon.
+      2.afficher question en  itérant sur la liste contenant les questions   avec un ngFor*-->
+
+<p></p>
+<p style="font-size: 20px">Réponse: </p>
+
+<button ion-button item-start (click)="reponseVraie()">VRAI</button>
+<button ion-button item-start (click)="reponseFaux()">FAUX</button>
+{{test}}
+</ion-content>
